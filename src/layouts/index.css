@@ -13,40 +13,47 @@ a{
 }
 
 .Hero {
-  background: #071144;
-  /*background-image: url('../images/Framer-X-Wallpapers/Desktop5K\ 5120x2880.jpg');*/
-  /*background: url('../images/wallpaper3.jpg');*/
+  background:black;
+  height: 1000px;
+  /* background-image: url('../images/Framer-X-Wallpapers/Desktop5K\ 5120x2880.jpg'); */
+  /* background: url('../../public/static/images/wallpaper3.jpg'); */
+  /* background: url('../images/wallpaper3.jpg'); */
+  background-image: url('../images/Framer-X-Wallpapers/Desktop5K-5120x2880.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position: top -200px center;
+  /* margin: -250px; */
 }
 
 .HeroGroup {
   margin: 0 auto;
-  max-width: 500px;
-  padding: 150px 50px;
+  max-width: 800px;
+  padding: 500px 50px 0 50px;
   text-align: center;
 }
 
 .Hero h1 {
   margin: 0;
   color: white;
-  font-size: 60px;
+  font-size: 80px;
   line-height: 1.2;
 }
 
 .Hero p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1.4;
 }
 
 .Hero a {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   padding: 9px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px; */
+  letter-spacing: 2px;
 }

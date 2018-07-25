@@ -5,9 +5,9 @@ const IndexPage = () => (
   <div>
     <div className="Hero">
       <div className="HeroGroup">
-        <h1>Learn to design and code React Apps</h1>
-        <p>Complete courses about the best tools and design systems. Prototype nad build apps with React and Swift</p>
-        <Link to="/page-2/">Watch the Video here</Link>
+        <Link to="/page-2/">Watch Teaser Video</Link>
+        <h1>React, meet design.</h1>
+        <p>This fall we’re launching Framer X, a game-changing new product that seamlessly blends design and development. Join our waitlist to get early access.</p>
       </div>
     </div>
   </div>
