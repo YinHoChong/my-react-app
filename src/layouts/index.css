@@ -29,7 +29,7 @@ a{
 .HeroGroup {
   margin: 0 auto;
   max-width: 800px;
-  padding: 500px 50px 0 50px;
+  padding: 530px 50px 0 50px;
   text-align: center;
 }
 
@@ -37,13 +37,22 @@ a{
   margin: 0;
   color: white;
   font-size: 80px;
-  line-height: 1.2;
+  /* line-height: 1.8; */
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  margin-top: 20px;
+  font-size: 22px;
   line-height: 1.4;
+  animation: HeroAnimation 3s 0.4s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
 }
 
 .Hero a {
@@ -51,9 +60,41 @@ a{
   font-weight: 500;
   color: white;
   text-transform: uppercase;
-  /* background: rgba(0, 0, 0, 0.7); */
+  background: rgba(0, 0, 0, 0.7);
   padding: 9px 20px;
-  /* border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px; */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
   letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero a:hover {
+  background: white;
+  color: black;
+}
+
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 420px 50px 0 50px;
+  }
+
+  .Hero h1 {
+    font-size: 40px;
+  }
+
+  .Hero p {
+    font-size: 24px;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
 }
