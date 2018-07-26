@@ -9,11 +9,12 @@ const FooterGroup = styled.div `
 `
 
 const Text = styled.p`
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     color: #486791;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
+    text-align: center;
 `
 
 const Button = styled.button`
@@ -54,6 +55,8 @@ const Copyright = styled.div`
     max-width: 500px;
     margin: 0 auto;
     padding: 0px 20px;
+    font-size: 16px;
+    text-align: center;
 `
 
 const Footer = ({data, children}) => (

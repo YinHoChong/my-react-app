@@ -32,8 +32,8 @@ const IndexPage = () => (
   <div>
     <div className="Hero">
       <div className="HeroGroup">
-        <Link to="/page-2/">Watch Teaser Video</Link>
-        <h1>Thank you Aroa 😗<br/>React, meet design.</h1>
+        <a href="https://framer.com/x">Watch Teaser Video</a>
+        <h1>Thank you Aroa 😗<br/>Thank you Meng 😗<br/>Thank you Daniel 😗<br/>React, meet design.</h1>
         <p>This fall we’re launching Framer X, a game-changing new product that seamlessly blends design and development. Join our waitlist to get early access.</p>
         <div className="Logos">
           <img src={require("../images/logo-sketch.png")} width="50"/>
@@ -79,7 +79,7 @@ const IndexPage = () => (
       image={require('../images/wallpaper2.jpg')}
       logo={require('../images/logo-react.png')}
       title="React for Designers"
-      text="Learn how yo build a modern site using ract and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contenful and deploying your site with Netlify."
+      text="Learn how to build a modern site using ract and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contenful and deploying your site with Netlify."
     />
     
     <SectionCaption>12 sections - 6 jours </SectionCaption>
